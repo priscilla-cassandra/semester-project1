@@ -1,4 +1,8 @@
 /*------------GLOBAL STYLES------------*/
+body {
+  margin: 0;
+}
+
 h1,
 h2,
 h3 {
@@ -42,7 +46,7 @@ header {
 .header-navigation li {
   position: relative;
   background-color: var(--green);
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 600;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -71,4 +75,43 @@ header {
 /*FOOTER*/
 footer {
   background: linear-gradient(to right, #a3e635, #ec4899, #22d3ee);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  font-size: 1.125rem;
+}
+
+footer h3,
+.footer-navigation,
+.socials-list,
+p {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-navigation li,
+.contact,
+.socials {
+  line-height: 2.3rem;
+}
+
+.footer-navigation li:hover {
+  text-decoration: underline;
+}
+
+.socials-list li {
+  display: flex;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+.socials i {
+  margin-right: 1rem;
+}
+
+.contact p {
+  margin-bottom: 1.5rem;
 }
