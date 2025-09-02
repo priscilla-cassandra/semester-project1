@@ -9,6 +9,66 @@ h3 {
   font-family: "dm sans", sans-serif;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --pink: #ec4899;
+  --green: #a3e635;
+  --blue: #22d3ee;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 /*HEADER*/
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 3.5rem;
+}
+
+.header-navigation {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.header-navigation li {
+  position: relative;
+  background-color: var(--green);
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+.header-navigation li:hover {
+  transform: scale(1.15);
+}
+
+.header-navigation li.currentpage::before {
+  content: "";
+  position: absolute;
+  top: -10px; /* how far above the li it sits */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent; /* left side of triangle */
+  border-right: 10px solid transparent; /* right side of triangle */
+  border-top: 10px solid var(--green); /* upside down (points down) */
+}
+.header-navigation li.currentpage:hover {
+  transform: none;
+}
 
 /*FOOTER*/
+footer {
+  background: linear-gradient(to right, #a3e635, #ec4899, #22d3ee);
+}

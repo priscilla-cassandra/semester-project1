@@ -7,7 +7,6 @@
       name="description"
       content="The community science museum's admission fee is free. You can visit us for free. Guided tours cost 70NOK. Our opening hours are tuesday, wednesday, thursday, friday, saturday and sunday. We are closed on mondays."
     />
-    />
     <link href="styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,18 +24,20 @@
   </head>
   <body>
     <header>
-      <img
-        src="Images/Logo website2.png"
-        alt="Logo of the community science muesum"
-        class="webpagelogo"
-      />
+      <a href="index.html">
+        <img
+          src="Images/Logo website2.png"
+          alt="Logo of the community science muesum"
+          class="webpagelogo"
+        />
+      </a>
       <nav>
-        <ul>
+        <ul class="header-navigation">
           <li><a href="about.html">About us</a></li>
           <li><a href="exhibitions.html">Exhibitions</a></li>
           <li><a href="explore.html">Explore</a></li>
           <li><a href="visitus.html">Visit us</a></li>
-          <li>
+          <li class="currentpage">
             <a href="prices.html" class="currentpage"
               >Prices and opening hours</a
             >
