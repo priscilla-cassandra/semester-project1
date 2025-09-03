@@ -1,6 +1,7 @@
-/*------------GLOBAL STYLES------------*/
+/*---------------------------GLOBAL STYLES---------------------------*/
 body {
   margin: 0;
+  height: 100%;
 }
 
 h1,
@@ -34,7 +35,7 @@ a {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 3.5rem;
+  padding: 1.5rem;
 }
 
 .header-navigation {
@@ -114,4 +115,62 @@ p {
 
 .contact p {
   margin-bottom: 1.5rem;
+}
+
+/*------------------------------------HOMEPAGE------------------------------------*/
+.homepage-hero {
+  background-image: url(Images/robotics_girl.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  max-width: 100%;
+  height: 31.25rem;
+}
+
+.about-hero {
+  background-image: url(Images/science_museum.jpg);
+}
+
+.about-hero,
+.exhibitions-hero,
+.explore-hero,
+.visitus-hero,
+.prices-hero,
+.specialevents-hero,
+.getinvolved-hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 35%;
+  position: relative;
+  max-width: 100%;
+  height: 25rem;
+}
+
+.exhibitions-hero {
+  background-image: url(Images/ecology.jpg);
+}
+
+.explore-hero {
+  background-image: url(Images/planet_earth.jpg);
+  background-position: center;
+}
+
+.visitus-hero {
+  background-image: url(Images/parking_lot_canva.jpg);
+  background-position: center;
+}
+
+.prices-hero {
+  background-image: url(Images/museum_prices_and_opening.jpg);
+  background-position: 50% 25%;
+}
+
+.specialevents-hero {
+  background-image: url(Images/energetica_exhibition_illustration.jpg);
+}
+
+.getinvolved-hero {
+  background-image: url(Images/group_of_people.jpg);
+  background-position: center;
 }
