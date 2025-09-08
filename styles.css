@@ -6,8 +6,8 @@ body {
 }
 
 main {
-  margin-left: 5rem;
-  margin-right: 5rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
 }
 
 h1,
@@ -24,7 +24,7 @@ h1 {
   font-size: 2rem;
 }
 
-.pink-h2 {
+.pink {
   color: var(--pink);
 }
 
@@ -195,7 +195,6 @@ p {
 
 /*------------------------------------HOMEPAGE------------------------------------*/
 /*--------------------------------------------------------------------------------*/
-
 .mammoth-skeleton,
 .energetica-img2,
 .energetica-img {
@@ -204,17 +203,15 @@ p {
   position: relative;
   background-size: cover;
   max-width: 100%;
-  height: 20rem;
+  min-height: 20rem;
 }
 
 .energetica-img2 {
   background-image: url(Images/energetica_exhibition_illustration2.jpg);
 }
-
 .mammoth-skeleton {
   background-image: url(Images/mammoth_skeleton.jpg);
 }
-
 .energetica-img {
   background-image: url(Images/energetica_exhibition_illustration.jpg);
 }
@@ -222,10 +219,12 @@ p {
 .homepage-exhibitions,
 .energetica-homepage {
   display: flex;
+  align-items: stretch;
 }
 
 .homepage-exhibitions {
   gap: 2rem;
+  margin-bottom: 3rem;
 }
 .homepage-paragraph {
   margin-left: 1.5rem;
@@ -247,10 +246,6 @@ p {
 
 .energetica-exhibition-text p {
   margin-bottom: 1.5rem;
-}
-
-.pink-h2 {
-  padding-top: 3rem;
 }
 
 .energetica-homepage {
@@ -342,20 +337,16 @@ p {
   flex: 1;
 }
 
-.cosmology-section {
+.cosmology-section,
+.robotics-section {
   background-color: var(--green);
 }
-.evolution-section {
+.evolution-section,
+.ecology-section {
   background-color: var(--pink);
 }
 .biology-section {
   background-color: var(--blue);
-}
-.robotics-section {
-  background-color: var(--green);
-}
-.ecology-section {
-  background-color: var(--pink);
 }
 
 .exhibitions-sections {
@@ -375,4 +366,237 @@ p {
 
 .exhibitions-sections p {
   margin-bottom: 1rem;
+}
+
+/*------------------------------------SPECIAL EVENTS------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+.aeronautics-professor-img {
+  background-image: url(Images/aeronautic_professor.jpg);
+}
+.nightatmuseum-img {
+  background-image: url(Images/dinosaur_skeleton.jpg);
+}
+.energetica-img22 {
+  background-image: url(Images/energetica_exhibition_illustration2.jpg);
+}
+
+.aeronautics-professor-img,
+.nightatmuseum-img,
+.energetica-img22 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  max-width: 100%;
+  align-items: stretch;
+  min-height: 20rem;
+}
+
+.specialevents-section2 {
+  display: flex;
+  gap: 4rem;
+}
+.energetica-exhibition {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.energetica-exhibition-text,
+.energetica-img22 {
+  flex: 1;
+}
+.aeronautics-professor-section-text,
+.nightatmuseum-section-text {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.energetica-exhibition {
+  background-color: var(--pink);
+}
+.aeronautics-professor-section {
+  background-color: var(--blue);
+}
+.nightatmuseum-section {
+  background-color: var(--green);
+}
+/*------------------------------------ABOUT US------------------------------------*/
+/*--------------------------------------------------------------------------------*/
+.about-info-1-img {
+  background-image: url(Images/dna.jpg);
+}
+.about-info-2-img {
+  background-image: url(Images/test_tube_colorful.jpg);
+}
+.about-info-3-img {
+  background-image: url(Images/dinosaur_skeletons.jpg);
+}
+
+.about-info-1-img,
+.about-info-2-img,
+.about-info-3-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 13rem;
+  max-width: 100%;
+}
+.about-info-1,
+.about-info-2,
+.about-info-3 {
+  display: flex;
+  align-items: stretch;
+}
+.about-info-1 div,
+.about-info-2 div,
+.about-info-3 div {
+  flex: 1;
+}
+.about-info-1,
+.about-info-2 {
+  margin-bottom: 2rem;
+}
+.about-info-1-text,
+.about-info-3-text {
+  margin-right: 1.5rem;
+}
+.about-info-2-text {
+  margin-left: 1.5rem;
+}
+.about-info-1-text p,
+.about-info-2-text p,
+.about-info-3-text p {
+  margin-bottom: 1rem;
+}
+
+/*------------------------------------GET INVOLVED------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+.support-img {
+  background-image: url(Images/girls_math.jpg);
+}
+.volunteer-img {
+  background-image: url(Images/volunteer.jpg);
+}
+.internship-img {
+  background-image: url(Images/student.jpg);
+}
+
+.support-img,
+.volunteer-img,
+.internship-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  min-height: 15rem;
+}
+.support,
+.volunteer,
+.internship {
+  display: flex;
+  align-items: stretch;
+}
+.support div,
+.volunteer div,
+.internship div {
+  flex: 1;
+}
+.pink {
+  color: var(--pink);
+}
+.support,
+.volunteer {
+  margin-bottom: 3rem;
+}
+.support-text,
+.volunteer-text,
+.internship-text {
+  margin-right: 1.5rem;
+}
+.support-text p,
+.volunteer-text p,
+.internship-text p {
+  margin-bottom: 1rem;
+}
+.get-involved h2 {
+  margin-top: 0;
+}
+/*------------------------------------EXPLORE----------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+.for-kids-img {
+  background-image: url(Images/boy_doing_science.jpg);
+}
+.for-teachers-img {
+  background-image: url(Images/teacher.jpg);
+}
+.for-researchers-img {
+  background-image: url(Images/researcher.jpg);
+}
+
+.for-kids-img,
+.for-teachers-img,
+.for-researchers-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  min-height: 15rem;
+}
+
+.for-kids,
+.for-teachers,
+.for-researchers {
+  display: flex;
+  align-items: stretch;
+}
+.for-kids div,
+.for-teachers div,
+.for-researchers div {
+  flex: 1;
+}
+
+.for-kids,
+.for-teachers {
+  margin-bottom: 3rem;
+}
+.for-kids-text,
+.for-teachers-text,
+.for-researchers-text {
+  margin-right: 1.5rem;
+}
+.for-kids-text p,
+.for-teachers-text p,
+.for-researchers-text p {
+  margin-bottom: 1rem;
+}
+.explore h2 {
+  margin-top: 0;
+}
+/*------------------------------------VISIT US----------------------------------------*/
+/*------------------------------------------------------------------------------------*/
+iframe {
+  width: 100%;
+}
+.address {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.parking,
+.by-bus,
+.accessibility,
+.food-and-drink {
+  margin-bottom: 3rem;
+}
+/*------------------------------------PRICES AND OPENING HOURS----------------------------------------*/
+/*----------------------------------------------------------------------------------------------------*/
+.prices p,
+.opening-hours p {
+  margin-bottom: 1rem;
+}
+
+.prices {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
 }
