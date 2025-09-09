@@ -38,13 +38,31 @@
           class="webpagelogo"
         />
       </a>
+      <input type="checkbox" id="hamburger-menu" />
+      <label for="hamburger-menu" class="hamburger-icon"
+        ><i class="fa-solid fa-bars"></i
+      ></label>
       <nav>
+        <label for="hamburger-menu" class="close-button"
+          ><i class="fa-solid fa-xmark"></i
+        ></label>
         <ul class="header-navigation">
-          <li class="currentpage"><a href="about.html">About us</a></li>
+          <li class="mobile-only">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="currentpage">
+            <a href="about.html" class="currentpage">About us</a>
+          </li>
           <li><a href="exhibitions.html">Exhibitions</a></li>
+          <li class="mobile-only">
+            <a href="specialevents.html">Special events</a>
+          </li>
           <li><a href="explore.html">Explore</a></li>
           <li><a href="visitus.html">Visit us</a></li>
           <li><a href="prices.html">Prices and opening hours</a></li>
+          <li class="mobile-only">
+            <a href="getinvolved.html">Get involved</a>
+          </li>
         </ul>
       </nav>
     </header>

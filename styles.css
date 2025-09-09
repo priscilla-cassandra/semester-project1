@@ -262,7 +262,7 @@ p {
 
 .energetica-img {
   flex: 1;
-  height: 20rem;
+  align-items: stretch;
 }
 
 .energetica-exhibition-text {
@@ -611,7 +611,27 @@ iframe {
 
 /*------------------------------------MEDIA QUERIES----------------------------------------*/
 /*-----------------------------------------------------------------------------------------*/
+/*----OTHER BREAKPOINTS----*/
 
+@media (max-width: 1162px) {
+  .header-navigation a {
+    font-size: 1rem;
+  }
+  .header-navigation {
+    gap: 0.8rem;
+  }
+  footer {
+    gap: 7rem;
+  }
+}
+@media (max-width: 1036px) {
+  .webpagelogo {
+    width: 170px;
+  }
+  .header-navigation a {
+    font-size: 0.9rem;
+  }
+}
 /*----HAMBURGER MENU (>768px)----*/
 #hamburger-menu {
   display: none;
@@ -630,11 +650,15 @@ iframe {
 }
 
 /*----TABLET (481px - 768px)----*/
-.mobile-only {
-  display: block;
-}
 
+/*Hamburger menu*/
 @media (max-width: 768px) {
+  .mobile-only {
+    display: block;
+  }
+  .header-navigation li.currentpage::before {
+    display: none;
+  }
   .hamburger-icon {
     display: flex;
   }
@@ -644,15 +668,11 @@ iframe {
   .nav-icon {
     justify-content: flex-end;
   }
-  header > a {
-    order: 1;
-    flex: 1;
-  }
   nav {
     display: none;
     flex-direction: column;
     align-items: center;
-    height: 40%;
+    height: 55%;
     z-index: 999;
   }
   .header-navigation li {
@@ -688,12 +708,46 @@ iframe {
     top: 1.5rem;
     right: 0.1rem;
   }
+  /*Page content*/
+  main {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+  p {
+    font-size: 0.875rem;
+  }
+  /*Homepage*/
+  .mammoth-skeleton,
+  .energetica-img,
+  .energetica-img2 {
+    min-height: 15rem;
+  }
+
+  .homepage-paragraph p {
+    margin-bottom: 1rem;
+  }
+  /*Exhibitions page*/
+  .exhibitions-text,
+  .specialevents-anchor p {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+  /*Footer*/
+  h3 {
+    font-size: 1.125rem;
+  }
 }
 
 /*----MOBILE (320px - 480px)----*/
-@media (max-width: 360px) {
+@media (max-width: 320px) {
   .close-button {
-    right: 10rem;
+    right: 1rem;
     font-size: 1.5rem;
   }
 }
@@ -714,27 +768,5 @@ iframe {
   }
   .prices-hero {
     background-position: 30% 10%;
-  }
-}
-
-/*----OTHER BREAKPOINTS----*/
-
-@media (max-width: 1162px) {
-  .header-navigation a {
-    font-size: 1rem;
-  }
-  .header-navigation {
-    gap: 0.8rem;
-  }
-  footer {
-    gap: 7rem;
-  }
-}
-@media (max-width: 1036px) {
-  .webpagelogo {
-    width: 170px;
-  }
-  .header-navigation a {
-    font-size: 0.9rem;
   }
 }
