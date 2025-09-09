@@ -6,8 +6,8 @@ body {
 }
 
 main {
-  margin-left: 8rem;
-  margin-right: 8rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 h1,
@@ -326,6 +326,7 @@ p {
   position: relative;
   background-size: cover;
   max-width: 100%;
+  min-height: 20rem;
 }
 
 .cosmology-section,
@@ -632,6 +633,13 @@ iframe {
     font-size: 0.9rem;
   }
 }
+/*Large desktop (1025px-1366px)*/
+@media (min-width: 1025px) and (max-width: 1336px) {
+  .specialevents-section2 {
+    gap: 2rem;
+  }
+}
+
 /*----HAMBURGER MENU (>768px)----*/
 #hamburger-menu {
   display: none;
@@ -753,6 +761,17 @@ iframe {
 }
 
 @media (max-width: 480px) {
+  .hamburger-icon {
+    margin-top: 0.5rem;
+  }
+  .webpagelogo {
+    width: auto;
+    height: 2.5rem;
+  }
+  main {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
   .homepage-hero,
   .about-hero,
   .exhibitions-hero,
@@ -761,12 +780,124 @@ iframe {
   .prices-hero,
   .specialevents-hero,
   .getinvolved-hero {
-    height: 15rem;
+    height: 14rem;
   }
   .about-hero {
     background-position: 50% 20%;
   }
   .prices-hero {
     background-position: 30% 10%;
+  }
+  .homepage-exhibitions {
+    flex-direction: column;
+  }
+  .energetica-homepage {
+    display: block;
+  }
+
+  .mammoth-skeleton,
+  .energetica-img2,
+  .energetica-img {
+    min-height: 10rem;
+  }
+  .energetica-img {
+    height: 10rem;
+  }
+  /*Exhibitions*/
+  .exhibitions-text,
+  .specialevents-anchor p {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+  }
+  .cosmology-section,
+  .evolution-section,
+  .biology-section,
+  .robotics-section,
+  .ecology-section {
+    flex-direction: column;
+  }
+  .cosmology-img,
+  .evolution-img,
+  .biology-img,
+  .robotics-img,
+  .ecology-img {
+    min-height: 13rem;
+  }
+  /*Special events*/
+  .energetica-exhibition,
+  .specialevents-section2 {
+    flex-direction: column;
+  }
+  .energetica-img22,
+  .aeronautics-professor-img,
+  .nightatmuseum-img {
+    min-height: 13rem;
+  }
+  /*About us*/
+  .about-info-1,
+  .about-info-3 {
+    flex-direction: column;
+  }
+  .about-info-2 {
+    flex-direction: column-reverse;
+  }
+  .about-info-1-text,
+  .about-info-2-text,
+  .about-info-3-text {
+    text-align: center;
+    margin: 0;
+  }
+  .about h2 {
+    text-align: center;
+  }
+  /*Explore*/
+  .for-kids,
+  .for-teachers,
+  .for-researchers {
+    flex-direction: column;
+  }
+  .for-kids-text,
+  .for-researchers-text,
+  .for-teachers-text {
+    text-align: center;
+    margin: 0;
+  }
+  /*Get involved*/
+  .support,
+  .volunteer,
+  .internship {
+    flex-direction: column;
+  }
+  .support-text,
+  .volunteer-text,
+  .internship-text {
+    text-align: center;
+    margin: 0;
+  }
+  /*Footer*/
+  footer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .contact {
+    text-align: center;
+  }
+  .contact p {
+    line-height: 1rem;
+  }
+  .socials {
+    line-height: 1.5rem;
+  }
+  .socials h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .socials-list {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .socials-list li {
+    flex-direction: column;
   }
 }
