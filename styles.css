@@ -6,8 +6,8 @@ body {
 }
 
 main {
-  margin-left: 5rem;
-  margin-right: 5rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 h1,
@@ -403,7 +403,7 @@ p {
 
 .specialevents-section2 {
   display: flex;
-  gap: 4rem;
+  gap: 2rem;
 }
 .energetica-exhibition {
   display: flex;
@@ -552,7 +552,9 @@ p {
   max-width: 100%;
   min-height: 15rem;
 }
-
+.for-teachers-img {
+  background-position: 50% 10%;
+}
 .for-kids,
 .for-teachers,
 .for-researchers {
@@ -614,6 +616,18 @@ iframe {
 /*-----------------------------------------------------------------------------------------*/
 /*----OTHER BREAKPOINTS----*/
 
+@media (min-width: 1900px) {
+  main {
+    margin-right: 18rem;
+    margin-left: 18rem;
+  }
+}
+@media (min-width: 1600px) and (max-width: 1899px) {
+  main {
+    margin-right: 10rem;
+    margin-left: 10rem;
+  }
+}
 @media (max-width: 1162px) {
   .header-navigation a {
     font-size: 1rem;
@@ -634,13 +648,16 @@ iframe {
   }
 }
 /*Large desktop (1025px-1366px)*/
-@media (min-width: 1025px) and (max-width: 1336px) {
-  .specialevents-section2 {
-    gap: 2rem;
+
+/*Landscape tablets and laptops (769px-1024px)*/
+@media (max-width: 1024px) {
+  .mammoth-skeleton,
+  .energetica-img2,
+  .energetica-img {
+    min-height: 18rem;
   }
 }
-
-/*----HAMBURGER MENU (>768px)----*/
+/*----HAMBURGER MENU----*/
 #hamburger-menu {
   display: none;
 }
@@ -660,7 +677,7 @@ iframe {
 /*----TABLET (481px - 768px)----*/
 
 /*Hamburger menu*/
-@media (max-width: 768px) {
+@media (max-width: 806px) {
   .mobile-only {
     display: block;
   }
@@ -751,8 +768,45 @@ iframe {
     font-size: 1.125rem;
   }
 }
-
+@media (max-width: 768px) {
+  .homepage-exhibitions {
+    flex-direction: column;
+  }
+  .energetica-homepage {
+    display: block;
+  }
+  .energetica-exhibition-text {
+    padding-bottom: 1rem;
+  }
+  /*Explore*/
+  .for-kids,
+  .for-teachers,
+  .for-researchers {
+    flex-direction: column;
+  }
+  .for-kids-text,
+  .for-researchers-text,
+  .for-teachers-text {
+    text-align: center;
+    margin: 0;
+  }
+  .for-teachers-img {
+    background-position: 50% 20%;
+  }
+}
 /*----MOBILE (320px - 480px)----*/
+@media (max-width: 567px) {
+  .homepage-hero,
+  .about-hero,
+  .exhibitions-hero,
+  .explore-hero,
+  .visitus-hero,
+  .prices-hero,
+  .specialevents-hero,
+  .getinvolved-hero {
+    height: 18rem;
+  }
+}
 @media (max-width: 320px) {
   .close-button {
     right: 1rem;
@@ -851,18 +905,7 @@ iframe {
   .about h2 {
     text-align: center;
   }
-  /*Explore*/
-  .for-kids,
-  .for-teachers,
-  .for-researchers {
-    flex-direction: column;
-  }
-  .for-kids-text,
-  .for-researchers-text,
-  .for-teachers-text {
-    text-align: center;
-    margin: 0;
-  }
+
   /*Get involved*/
   .support,
   .volunteer,
