@@ -776,6 +776,13 @@ iframe {
   .socials i {
     margin-right: 0;
   }
+  .instagram-logo i,
+  .facebook-logo i {
+    margin-left: 0.5rem;
+  }
+  .youtube-logo i {
+    margin-left: 0.2rem;
+  }
 }
 @media (max-width: 768px) {
   .homepage-exhibitions {
