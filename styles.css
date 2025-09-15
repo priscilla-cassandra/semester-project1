@@ -697,7 +697,13 @@ iframe {
     display: none;
     flex-direction: column;
     align-items: center;
-    height: 55%;
+    justify-content: center;
+    height: 55vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: 999;
   }
   .header-navigation li {
@@ -708,13 +714,13 @@ iframe {
   }
   #hamburger-menu:checked ~ nav {
     display: flex;
-    position: fixed;
+    /*position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     align-items: center;
-    justify-content: center;
+    justify-content: center;*/
   }
   #hamburger-menu:checked ~ .hamburger-icon {
     display: none;
@@ -723,8 +729,8 @@ iframe {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin: 0;
+    padding: 0;
   }
   .close-button {
     display: block;
@@ -766,6 +772,9 @@ iframe {
   /*Footer*/
   h3 {
     font-size: 1.125rem;
+  }
+  .socials i {
+    margin-right: 0;
   }
 }
 @media (max-width: 768px) {
