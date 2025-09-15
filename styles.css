@@ -694,7 +694,6 @@ iframe {
     justify-content: flex-end;
   }
   nav {
-    /*display: none;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -703,7 +702,6 @@ iframe {
     width: 100%;
     position: fixed;
     top: 0;
-    /*left: 0;*/
     right: 0;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 999;
@@ -717,7 +715,6 @@ iframe {
     color: white;
   }
   #hamburger-menu:checked ~ nav {
-    /*display: flex;*/
     transform: translatey(0);
   }
   #hamburger-menu:checked ~ .hamburger-icon {
@@ -941,7 +938,7 @@ iframe {
     text-align: center;
   }
   .contact p {
-    line-height: 1rem;
+    line-height: 1.6rem;
   }
   .socials {
     line-height: 1.5rem;
