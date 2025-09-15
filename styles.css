@@ -694,7 +694,8 @@ iframe {
     justify-content: flex-end;
   }
   nav {
-    display: none;
+    /*display: none;*/
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -702,9 +703,12 @@ iframe {
     width: 100%;
     position: fixed;
     top: 0;
-    left: 0;
+    /*left: 0;*/
+    right: 0;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 999;
+    transform: translatey(-100%);
+    transition: transform 0.4s ease-in-out;
   }
   .header-navigation li {
     background: none;
@@ -713,14 +717,8 @@ iframe {
     color: white;
   }
   #hamburger-menu:checked ~ nav {
-    display: flex;
-    /*position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    align-items: center;
-    justify-content: center;*/
+    /*display: flex;*/
+    transform: translatey(0);
   }
   #hamburger-menu:checked ~ .hamburger-icon {
     display: none;
