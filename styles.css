@@ -282,6 +282,19 @@ p {
 .energetica-homepage {
   background-color: var(--pink);
 }
+.opening-hours-mobile {
+  display: none;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10%;
+  width: 60%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  margin: 4rem auto 0 auto;
+}
+.opening-hours-mobile-text {
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+}
 
 /*------------------------------------EXHIBITIONS------------------------------------*/
 /*-----------------------------------------------------------------------------------*/
@@ -674,7 +687,7 @@ iframe {
   color: white;
 }
 
-/*----TABLET (481px - 768px)----*/
+/*---------------------------TABLET (481px - 768px)--------------------------*/
 
 /*Hamburger menu*/
 @media (max-width: 806px) {
@@ -698,7 +711,7 @@ iframe {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 55vh;
+    height: 60vh;
     width: 100%;
     position: fixed;
     top: 0;
@@ -758,6 +771,9 @@ iframe {
   .homepage-paragraph p {
     margin-bottom: 1rem;
   }
+  .opening-hours-mobile {
+    display: block;
+  }
   /*Exhibitions page*/
   .exhibitions-text,
   .specialevents-anchor p {
@@ -805,7 +821,7 @@ iframe {
     background-position: 50% 20%;
   }
 }
-/*----MOBILE (320px - 480px)----*/
+/*----------------------------MOBILE (320px - 480px)------------------------*/
 @media (max-width: 567px) {
   .homepage-hero,
   .about-hero,
