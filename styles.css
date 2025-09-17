@@ -6,8 +6,8 @@ body {
 }
 
 main {
-  margin-left: 3rem;
-  margin-right: 3rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
 
 h1,
@@ -624,6 +624,42 @@ iframe {
   margin-bottom: 3rem;
   margin-top: 3rem;
 }
+.book-guided-tour {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-bottom: 3rem;
+}
+
+.book-guided-tour input,
+.book-guided-tour select,
+.book-guided-tour textarea {
+  margin-bottom: 0.8rem;
+  display: block;
+  padding: 0.5rem;
+  border: 1px solid #999;
+  border-radius: 0.4rem;
+}
+.book-guided-tour textarea {
+  min-height: 8rem;
+}
+.submitt-button {
+  width: 35%;
+  background-color: var(--green);
+  color: black;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 0.4rem;
+}
+.button-wrapper button:hover {
+  background-color: #8bc12b;
+  color: black;
+  cursor: pointer;
+}
 
 /*------------------------------------MEDIA QUERIES----------------------------------------*/
 /*-----------------------------------------------------------------------------------------*/
@@ -668,6 +704,9 @@ iframe {
   .energetica-img2,
   .energetica-img {
     min-height: 18rem;
+  }
+  .book-guided-tour {
+    width: 70%;
   }
 }
 /*----HAMBURGER MENU----*/
@@ -780,6 +819,10 @@ iframe {
     margin-left: 6rem;
     margin-right: 6rem;
   }
+  /*Prices and opening hours*/
+  .book-guided-tour {
+    width: 60%;
+  }
   /*Footer*/
   h3 {
     font-size: 1.125rem;
@@ -832,6 +875,13 @@ iframe {
   .specialevents-hero,
   .getinvolved-hero {
     height: 18rem;
+  }
+  /*Prices and opening hours*/
+  .book-guided-tour {
+    width: 90%;
+  }
+  .submitt-button {
+    width: 45%;
   }
 }
 @media (max-width: 320px) {

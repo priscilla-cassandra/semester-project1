@@ -73,17 +73,18 @@
       <h1>Prices and opening hours</h1>
       <section class="prices">
         <h2 class="pink">Prices</h2>
-        <p>The entrance is free for all.</p>
+        <p>The entrance is <span class="bold-text">free</span> for all.</p>
         <p>
           There are guided tours of the museum that leave every hour. These
-          tours are 70 NOK per person and include a handy printed guide of the
-          museum.
+          tours are <span class="bold-text">70 NOK</span> per person and include
+          a handy printed guide of the museum.
         </p>
         <p>
           If you would like to organise a guided tour for your group of 6 or
-          more people, please contact us to arrange the tour.
+          more people, please pre-book your tour in the form below.
         </p>
       </section>
+
       <section class="opening-hours">
         <h2 class="pink">Opening hours</h2>
         <p>Monday: Closed</p>
@@ -94,6 +95,39 @@
         <p>Saturday: 9:00 – 16:00</p>
         <p>Sunday: 9:00 – 13:00</p>
       </section>
+      <form class="book-guided-tour">
+        <h2 class="pink">Book your guided tour</h2>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Jane Smith" />
+        <label for="email">E-mail address</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="jane@gmail.com"
+        />
+        <div class="date-and-number">
+          <label for="group-size">Group size</label>
+          <select name="Group-size" id="group-size">
+            <option value="6-10">6-10</option>
+            <option value="11-15">11-15</option>
+            <option value="16-20">16-20</option>
+            <option value="21-25">21-25</option>
+            <option value=">25">>25</option>
+          </select>
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date" />
+        </div>
+        <label for="additional-information">Additional information</label>
+        <textarea
+          id="additional-information"
+          name="additional-information"
+          placeholder="e.g, I would like a tourguide who speaks french"
+        ></textarea>
+        <div class="button-wrapper">
+          <button type="submitt" class="submitt-button">Book tour</button>
+        </div>
+      </form>
     </main>
     <footer>
       <section class="contact">
