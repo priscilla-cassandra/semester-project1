@@ -640,6 +640,10 @@ iframe {
   border: 1px solid #999;
   border-radius: 0.4rem;
 }
+.book-guided-tour select,
+.book-guided-tour input[type="date"] {
+  color: black;
+}
 .book-guided-tour textarea {
   min-height: 8rem;
 }
