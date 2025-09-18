@@ -845,14 +845,7 @@ iframe {
     font-size: 1.125rem;
   }
   .socials i {
-    margin-right: 0;
-  }
-  .instagram-logo i,
-  .facebook-logo i {
-    margin-left: 0.5rem;
-  }
-  .youtube-logo i {
-    margin-left: 0.2rem;
+    margin-right: 0.5rem;
   }
 }
 @media (max-width: 768px) {
