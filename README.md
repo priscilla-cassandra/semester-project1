@@ -7,7 +7,7 @@ The Community Science Museum is an informative and engaging website that display
 - CSS
 
 ## Running the project
-The project can be run using VSCode with the following steps:
+The project can be viewed and run bu cloning the repo to VSCode
 1. Make sure you have VS Code installed on your computer
 2. Inside VS Code, press Ctrl+Shift+P to open the Command Palette
 3. Type: `Git: Clone`
