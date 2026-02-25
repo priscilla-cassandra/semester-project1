@@ -15,6 +15,9 @@ The project can be run using VSCode with the following steps:
 5. Select a folder on your local machine to save repository
 6. When prompted, click "Open" to open the cloned repository in VS Code
 
+## Link to live website
+https://priscilla-cassandra.github.io/semester-project1/index.html
+
 ## Author
 **Name:** Priscilla C. Neeraas <br>
 **GitHub**: priscilla-cassandra
