@@ -1,6 +1,6 @@
 # Community Science Museum - semester-project1
 
-The Community Science Museum is an informative and engaging website that displays information about the the new local Community Science Museum. The website contains important information to its audience about opening hours, how to get there, and what type of exhibitions can be seen at the museum. The aim of the website is to engage potential visitors, so that they would like to visit the Community Science Museum. 
+The Community Science Museum is an informative and engaging website that displays information about the new local Community Science Museum. The website contains important information to its audience about opening hours, how to get there, and what type of exhibitions can be seen at the museum. The aim of the website is to engage potential visitors, so that they would like to visit the Community Science Museum. 
 
 ## Built with
 - HTML
@@ -16,9 +16,9 @@ The project can be run using VSCode with the following steps:
 6. When prompted, click "Open" to open the cloned repository in VS Code
 
 ## Author
-Priscilla C. Neeraas <br>
-GitHub username: priscilla-cassandra
+**Name:** Priscilla C. Neeraas <br>
+**GitHub**: priscilla-cassandra
 
 ## Contact
-Email: priscilla-92@live.com <br>
+priscilla-92@live.com <br>
 [LinkedIn](https://www.linkedin.com/in/priscilla-neeraas-379410145/)
