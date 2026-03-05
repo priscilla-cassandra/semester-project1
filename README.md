@@ -1,4 +1,5 @@
 # Community Science Museum - semester-project1
+![community_science_museum_compressed](https://github.com/user-attachments/assets/864aca78-f9ba-49ef-a62f-48e57cb8f936)
 
 The Community Science Museum is an informative and engaging website that displays information about the new local Community Science Museum. The website contains important information to its audience about opening hours, how to get there, and what type of exhibitions can be seen at the museum. The aim of the website is to engage potential visitors, so that they would like to visit the Community Science Museum. 
 
